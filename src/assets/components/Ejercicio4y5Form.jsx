@@ -30,7 +30,7 @@ const Formularios = () => {
     <div>
         <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 d-flex">
-             <Form.Control type="text" placeholder="Ingrese una Tarea" />
+             <Form.Control type="text" placeholder="Ingrese una Tarea" onChange={(e)=>setTareas(e.target.value.trimStart())} value={tarea} />
              <Button variant="primary" type="submit">
             <BsFillXCircleFill/>
             </Button>
