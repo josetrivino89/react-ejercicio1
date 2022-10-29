@@ -2,7 +2,7 @@ import React from 'react'
 import Ejercicio4y5Listas from "./Ejercicio4y5Listas";
 import { useState,useEffect } from "react";
 import {Form, Button} from "react-bootstrap";
-import {BsFillXCircleFill } from "react-icons/bs";
+import { HiCheckCircle } from "react-icons/hi2";
 
 
 const Formularios = () => {
@@ -32,7 +32,7 @@ const Formularios = () => {
         <Form.Group className="mb-3 d-flex">
              <Form.Control type="text" placeholder="Ingrese una Tarea" onChange={(e)=>setTareas(e.target.value.trimStart())} value={tarea} />
              <Button variant="primary" type="submit">
-            <BsFillXCircleFill/>
+            <HiCheckCircle/>
             </Button>
         </Form.Group>
       

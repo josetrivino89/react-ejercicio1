@@ -5,11 +5,11 @@ import {BsFillXCircleFill } from "react-icons/bs";
 const tarea = ({nombredeTarea,borrarTarea})=>{
   return (
     <ListGroup.Item variant="primary">
-      {nombredeTarea}
       <i className='BsFillExclamationCircleFill'></i>
       <Button variant="outline-danger" onClick={() => borrarTarea (nombredeTarea)}>
       <BsFillXCircleFill/>
       </Button>
+      <>{nombredeTarea}</>
     </ListGroup.Item>
   );
 };
